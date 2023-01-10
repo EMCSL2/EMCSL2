@@ -1,0 +1,47 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>WinExe</OutputType>
+        <Nullable>enable</Nullable>
+        <UseWPF>true</UseWPF>
+        <TargetFramework>net6.0-windows10.0.17763.0</TargetFramework>
+        <ApplicationIcon>icon.ico</ApplicationIcon>
+        <AssemblyVersion>2.0.0</AssemblyVersion>
+        <FileVersion>2.0.0</FileVersion>
+        <Version>2.0.0</Version>
+        <Authors>MournInk &amp; FSacrifice</Authors>
+        <Company>EMCSL Official</Company>
+        <Product>EMCSL2</Product>
+        <Description>一个简易的用于启动我的世界服务器的启动器。</Description>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <None Remove="下载.png" />
+      <None Remove="主页.png" />
+      <None Remove="其它.png" />
+      <None Remove="刷新.png" />
+      <None Remove="导入.png" />
+      <None Remove="火箭.png" />
+      <None Remove="设置.png" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.Toolkit.Uwp.Notifications" Version="7.0.0" />
+      <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
+      <PackageReference Include="Ookii.Dialogs.Wpf" Version="5.0.1" />
+      <PackageReference Include="System.Management" Version="7.0.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Resource Include="下载.png" />
+      <Resource Include="主页.png" />
+      <Resource Include="其它.png" />
+      <Resource Include="刷新.png" />
+      <Resource Include="导入.png" />
+      <Resource Include="火箭.png" />
+      <Resource Include="设置.png" />
+    </ItemGroup>
+
+    <ProjectExtensions><VisualStudio><UserProperties Reactor_Commands="" Reactor_Configuration="Release" Reactor_Deploy="0" Reactor_Enabled="1" Reactor_Output="&lt;AssemblyLocation&gt;\&lt;AssemblyFileName&gt;" Reactor_Project="" /></VisualStudio></ProjectExtensions>
+
+</Project>
